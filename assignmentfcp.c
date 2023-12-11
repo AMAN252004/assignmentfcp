@@ -1,40 +1,33 @@
-// wap to use modulus operator to calculate remainder of a given number to calculate remainder of a given number and switch cases depending on the remainder
+//Q1) WAP TO DETERMINE WHETHER THE GIVEN NUMBER IS DIVISIBLE BY 3,5,6,7,8
 #include<stdio.h>
 
 int main(void)
 {
-    int num,rem;
+    int num;
     printf("Enter a number: ");
-    scanf("%i",&num);
-    rem = num % 9;
-    switch(rem)
+    scanf("%d",&num);
+    if(num%3 == 0)
     {
-        case 0:
-            printf("Remainder= %i",rem);
-            break;
-        case 1:
-            printf("Remainder= %i",rem);
-            break;
-        case 2:
-            printf("Remainder= %i",rem);
-            break;
-        case 3:
-            printf("Remainder= %i",rem);
-            break;
-        case 4:
-            printf("Remainder= %i",rem);
-            break;
-        case 5:
-            printf("Remainder= %i",rem);
-            break;
-        case 6:
-            printf("Remainder= %i",rem);
-            break;
-        case 7:
-            printf("Remainder= %i",rem);
-            break;
-        case 8:
-            printf("Remainder= %i",rem);
-            break;
+        printf("%d is divisible by 3 \n",num);
+        if(num%6 ==0)
+        {
+            printf("%d is divisible by 6 \n",num);
+        }
+    }
+    if(num%5 ==0)
+    {
+        printf("%d is divisible by 5 \n",num);
+    }
+    if(num%7 ==0)
+    {
+        printf("%d is divisible by 7 \n",num);
+    }
+    if(num%8 ==0)
+    {
+        printf("%d is divisible by 8 \n",num);
+    }
+    if(num%3!=0 && num%5!=0 && num%6!=0 && num%7!=0 && num%8!=0)
+    {
+        printf("%d is not divisible by 3,5,6,7,8",num);
     }
 }

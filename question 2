@@ -1,4 +1,4 @@
-// wap to use modulus operator to calculate remainder of a given number to calculate remainder of a given number and switch cases depending on the remainder
+// wap to use modulus operator to calculate remainder of given number to calculate remainder of a given number and switch cases depending on the remainder
 #include<stdio.h>
 
 int main(void)
